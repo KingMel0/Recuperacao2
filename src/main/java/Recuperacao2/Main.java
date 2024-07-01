@@ -4,7 +4,9 @@ import java.util.List;
 
 public class Main {
     public static void main(String[] args) {
-        List<Cidade> cidades = Cidade.carregarCidades(); // Carrega as cidades e suas coordenadas
+
+        // Carrega as cidades e suas coordenadas
+        List<Cidade> cidades = Cidade.carregarCidades(); 
 
         // Versão de referência (sem threads)
         Experimento experimento1 = new Experimento(cidades, 1);
